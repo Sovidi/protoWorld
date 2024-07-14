@@ -12,7 +12,7 @@ function App() {
   return (
     <Context>
       <section className="main">
-          <BrowserRouter basename="protoWorld">
+          <HashRouter>
             <Header/>
             <Routes>
               <Route path="/" element={<Main/>}/>
@@ -21,7 +21,7 @@ function App() {
               <Route path="/selectgame" element={<SelectGame/>}/>
               <Route path="/questiongame" element={<QuestionGame/>}/>
             </Routes>
-          </BrowserRouter>
+          </HashRouter>
       </section>
     </Context>
   );
