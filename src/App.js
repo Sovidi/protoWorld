@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
+import { BrowserRouter, Route, Routes, Link, HashRouter } from "react-router-dom";
 import "./App.scss"
 import Context from './components/Context';
 import Pics from "./components/Pics";
@@ -12,7 +12,7 @@ function App() {
   return (
     <Context>
       <section className="main">
-          <BrowserRouter basename="protoWorld">
+          <HashRouter basename="protoWorld">
             <Header/>
             <Routes>
               <Route path="/" element={<Main/>}/>
@@ -21,7 +21,7 @@ function App() {
               <Route path="/selectgame" element={<SelectGame/>}/>
               <Route path="/questiongame" element={<QuestionGame/>}/>
             </Routes>
-          </BrowserRouter>
+          </HashRouter>
       </section>
     </Context>
   );
