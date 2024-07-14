@@ -12,7 +12,7 @@ function App() {
   return (
     <Context>
       <section className="main">
-          <BrowserRouter>
+          <BrowserRouter basename="/protoWorld">
             <Header/>
             <Routes>
               <Route path="/" element={<Main/>}/>
