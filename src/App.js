@@ -12,7 +12,7 @@ function App() {
   return (
     <Context>
       <section className="main">
-          <HashRouter basename="protoWorld">
+          <HashRouter>
             <Header/>
             <Routes>
               <Route path="/" element={<Main/>}/>
